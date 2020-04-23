@@ -12,5 +12,15 @@ function isNumeric(input) {
 }
 
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if (input === undefined) {
+        return "Hello, World!";
+    } else if (input === true) {
+        return "Hello, World!";
+    } else if (input === false) {
+        return "Hello, World!";
+    } else if (input === "") {
+        return false;
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
