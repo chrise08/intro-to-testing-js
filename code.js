@@ -26,17 +26,36 @@ function sayHello(input) {
 }
 
 function isFive(input) {
-    return input == 5;
+    return parseFloat(input) === 5;
 }
 
 function isEven(input) {
-    if (parseFloat(input) % 2 === 0) {
+    return (parseFloat(input) % 2 === 0);
+}
+
+function isVowel(input) {
+    if (
+        input === "A" ||
+        input === "E" ||
+        input === "I" ||
+        input === "O" ||
+        input === "U" ||
+        input === "a" ||
+        input === "e" ||
+        input === "i" ||
+        input === "o" ||
+        input === "u"
+    ) {
         return true;
     } else {
         return false;
     }
 }
 
-function isVowel(input) {
-    return input === "a" || input === "A";
+function add(input1, input2) {
+    if (!isNaN(input1) || !isNaN(input2) === true) {
+        return parseFloat(input1) + parseFloat(input2);
+    } else {
+        return NaN;
+    }
 }
