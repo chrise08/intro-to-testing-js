@@ -28,3 +28,11 @@ function sayHello(input) {
 function isFive(input) {
     return input == 5;
 }
+
+function isEven(input) {
+    if (parseFloat(input) % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
